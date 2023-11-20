@@ -1,0 +1,64 @@
+/* Add your custom styles here */
+
+/* Adjust the styles for the book list wrapper */
+.book-list-wrapper {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Adjust the styles for the social icons */
+.social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Adjust the styles for the heart icon */
+.social a i.fa-heart {
+    color: #f00; /* Change the color as needed */
+}
+
+/* Adjust the styles for the book details */
+.homepage_book_width {
+    margin-top: 10px;
+}
+
+.homepage_book_width h5 {
+    font-size: 1.2em;
+}
+
+.homepage_publisher_width h6 {
+    font-size: 1em;
+    color: #555;
+}
+
+.title_price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Adjust the styles for the add to cart button */
+.home-details-btn-wrapper {
+    margin-top: 15px;
+}
+
+.btn.home-details-btn {
+    background-color: #28a745; /* Change the color as needed */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.home-details-btn:hover {
+    background-color: #218838; /* Change the color as needed */
+}

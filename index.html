@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Add Bootstrap font awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>pbs</title>
+    <link rel="stylesheet" href="./src/css/header.css">
+<link rel="stylesheet" href="./src/css/islamic.css">
+<link rel="stylesheet" href="./src/css/recent.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+</head>
+<body>
+    
+<!-- Top Header with Responsive GIF Image -->
+<div class="top-header fixed">
+    <img src="./src/pbs/WebBannerTop20.gif" alt="Responsive GIF" class="img-fluid">
+  </div>
+  
+  <!-- Main Header with Left Image Icon, Search Bar, and Icons -->
+
+    <div class="container mt-3">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <img src="./src/pbs/logo.png" alt="Left Icon" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <div class="search-bar">
+            <input type="text" class="form-control" name="search" id="search" placeholder="Search">
+            <span class="search-icon">
+              <img src="./src/pbs/search_short.png" alt="Search Icon" class="img-fluid">
+            </span>
+          </div>
+        </div>
+        <div class="col-md-3 text-right">
+          <p class="text text-black mb-3">
+            <i class="fas fa-phone" style="color: red;"></i>+88 01313-770770</p> 
+           
+          <br>
+            <a style="color: black; cursor: pointer; text-decoration: none;" class="wishlist_icon_div mt-0" title="Wishlist">
+              <img class="wishlist_icon" src="./src/pbs/wishlist_new.png" alt="Wishlist">
+              <span class="badge badge-warning" id="lblWishlistCountMob">0</span>
+            </a>
+
+            <a class="cardDiv mt-0 mx-3">
+              <img class="img_my_cart" src="./src/pbs/cart.png" alt="Cart">
+              <span class="badge badge-warning">0</span>
+            </a>
+            <div class="text-right user_icon_div mt-0">
+              <input type="hidden" id="hdnLoginStatus" value="">
+              <a style="color: black;" href="/login"><img class="img_signin" src="./src/pbs/user.png" alt="User"></a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+  <div class="container-fluid mt-3 bg-light">
+    <div class="row ">
+      <!-- Sidebar Section -->
+      <div class="col-md-3 sidebar mt-5">
+          <div id="mySidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()"></a>
+            <div id="accordion">
+              <div class="card">
+                <div class="header_mobile" id="heading-1">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+                    <button class="btn btn-link " aria-expanded="true" aria-controls="collapse-1"><a>বিষয় </a></button>
+                  <span class="float-right m-2"><i class="fas fa-chevron-down"></i></span>
+                  </h5>
+                </div>
+                <!-- Add more card content here for each category -->
+                <ul id="collapse-1" class="mob_menu_max_height collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">বেস্ট সেলার</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">বেস্ট সেলার</a></li>
+                  <!-- Add more menu items as needed -->
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="header_mobile" id="heading-2">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false">
+                    <button class="btn btn-link " aria-expanded="true" aria-controls="collapse-1"><a>লেখক </a></button>
+                  <span class="float-right m-2"><i class="fas fa-chevron-down"></i></span>
+                  </h5>
+                </div>
+                <!-- Add more card content here for each category -->
+                <ul id="collapse-2" class="mob_menu_max_height collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">হুমায়ূন আহমেদ</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">শাহরিয়ার খান</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">সুনীল গঙ্গোপাধ্যায়</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">সৈয়দ মুজতবা আলী</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">আনিসুজ্জামান</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">সমরেশ মজুমদার</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">চেতন ভগত</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">কামরুল হাসান শায়ক</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">স্বকৃত নোমান,</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">মুজাফফর হোসেন</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">সেলিনা হোসেন</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">মিনার মনসুর</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">মোহাম্মদ আমিন</a></li>
+                  <!-- Add more menu items as needed -->
+                </ul>
+              </div>
+              <!-- Add more cards for other sections (লেখক, প্রকাশনী, একুশে বইমেলা, সর্বোচ্চ ডিসকাউন্ট, স্টেশনারি) here -->
+              <div class="card">
+                <div class="header_mobile" id="heading-3">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false">
+                    <button class="btn btn-link " aria-expanded="true" aria-controls="collapse-3"><a>প্রকাশনী </a></button>
+                  <span class="float-right m-2"><i class="fas fa-chevron-down"></i></span>
+                  </h5>
+                </div>
+                <!-- Add more card content here for each category -->
+                <ul id="collapse-3" class="mob_menu_max_height collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">বিশ্বসাহিত্য কেন্দ্র</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#"></a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#"></a></li>
+                  <!-- Add more menu items as needed -->
+                </ul>
+              </div>
+              <div class="card">
+                <div class="header_mobile" id="heading-4">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false">
+                    <button class="btn btn-link " aria-expanded="true" aria-controls="collapse-4"><a>একুশে বইমেলা</a></button>
+                  <span class="float-right m-2"><i class="fas fa-chevron-down"></i></span>
+                  </h5>
+                </div>
+                <!-- Add more card content here for each category -->
+                <ul id="collapse-4" class="mob_menu_max_height collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">বিশ্বসাহিত্য কেন্দ্র</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#"></a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#"></a></li>
+                  <!-- Add more menu items as needed -->
+                </ul>
+              </div>
+              <div class="card">
+                <div class="header_mobile" id="heading-5">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false">
+                    <button class="btn btn-link " aria-expanded="true" aria-controls="collapse-5"><a>একুশে বইমেলা</a></button>
+                  <span class="float-right m-2"><i class="fas fa-chevron-down"></i></span>
+                  </h5>
+                </div>
+                <!-- Add more card content here for each category -->
+                <ul id="collapse-5" class="mob_menu_max_height collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">একুশে বইমেলা ২০২০</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">একুশে বইমেলা ২০২২ </a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">একুশে বইমেলা ২০২৩</a></li>
+                  <!-- Add more menu items as needed -->
+                </ul>
+              </div>
+              <div class="card">
+                <div class="header_mobile" id="heading-6">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse-6" aria-expanded="false">
+                    <button class="btn btn-link " aria-expanded="true" aria-controls="collapse-6"><a>সর্বোচ্চ ডিস্কাউন্ট</a></button>
+                  <span class="float-right m-2"><i class="fas fa-chevron-down"></i></span>
+                  </h5>
+                </div>
+          
+              </div>
+              <div class="card">
+                <div class="header_mobile" id="heading-7">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse-7" aria-expanded="false">
+                    <button class="btn btn-link " aria-expanded="true" aria-controls="collapse-7"><a>স্টেশনারি</a></button>
+                  <span class="float-right m-2"><i class="fas fa-chevron-down"></i></span>
+                  </h5>
+                </div>
+                <!-- Add more card content here for each category -->
+                <ul id="collapse-7" class="mob_menu_max_height collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">একুশে বইমেলা ২০২০</a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">একুশে বইমেলা ২০২২ </a></li>
+                  <li class="mobile_menu" style="list-style: none;"><a href="0#">একুশে বইমেলা ২০২৩</a></li>
+                  <!-- Add more menu items as needed -->
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+      <!-- Content Section -->
+      <div class="container-fluid col-md-9 mt-5 m-0 p-0">
+        <div id="hero-section" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#hero-section" data-slide-to="0" class="active"></li>
+              <li data-target="#hero-section" data-slide-to="1"></li>
+              <li data-target="#hero-section" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./src/pbs/hero/1.png" class="d-block w-100" alt="Slide 1">
+         
+              </div>
+              <div class="carousel-item">
+                <img src="./src/pbs/hero/2.png" class="d-block w-100" alt="Slide 2">
+          
+              </div>
+              <div class="carousel-item">
+                <img src="./src/pbs/hero/3.png" class="d-block w-100" alt="Slide 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/pbs/hero/4.png" class="d-block w-100" alt="Slide 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/pbs/hero/5.png" class="d-block w-100" alt="Slide 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/pbs/hero/6.png" class="d-block w-100" alt="Slide 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/pbs/hero/6.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#hero-section" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#hero-section" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+       </div>
+      <div class="container-fluid row mt-3">
+        <div class="col-md-4">
+            <img src="./src/pbs/header_first/1.PNG" class="img-fluid" alt="" srcset="">
+        </div>
+        <div class="col-md-4">
+            <img src="./src/pbs/header_first/2.PNG" class="img-fluid" alt="" srcset="">
+        </div>
+        <div class="col-md-4">
+            <img src="./src/pbs/header_first/3.PNG" class="img-fluid" alt="" srcset="">
+        </div>
+      </div> 
+  
+  <!--Section-->
+  
+<div class="container mt-5 bg-white" style="border-radius: 5px;">
+<div class="book-list row pt-5">
+<div class="col-md-6">
+  <span class="text">সম্প্রতি সর্বাধিক বিক্রিত বই</span>
+</div>
+<div class="col-md-6">
+  <p class="text-right">সব দেখুন <i class="fa fa-arrow-right"></i></p>
+</div>
+</div>
+<hr>
+<div class="row" id="multi-card">
+  <div class="col-md-3">
+    <a href="0#" style="text-decoration: none;" class="yourCardId">
+      <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+        <div class="top-image">
+          <img src="./src/pbs/recent/1.jpg" 
+          class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+          <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+            <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+          </span>
+          <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+            <i class="fa fa-heart fa-3x" style="color: red;"></i>
+          </span>
+        </div>
+        
+      
+        <div class="card-body">
+            <h6 class="card-title book-name">মুনজেরিন শহীদের ইংরেজি শেখার তিনটি বই</h6>
+            <p class="writer-name text-wrap">মুনজেরিন শহীদ</p>
+            <p class="price">
+                <span class="other-amount">৳</span>
+                <span class="dollar-icon">100</span>
+            </p>
+        </div>
+        <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+    
+      </div>
+    </a>
+  </div>
+
+<div class="col-md-3">
+  <a href="0#" style="text-decoration: none;" class="yourCardId">
+    <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+      <div class="top-image">
+        <img src="./src/pbs/recent/2.jpg" 
+        class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+        <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+          <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+        </span>
+        <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+          <i class="fa fa-heart fa-3x" style="color: red;"></i>
+        </span>
+      </div>
+      
+    
+      <div class="card-body">
+          <h5 class="card-title book-name">ভ্যাট আইন ও বিধান: সহজ পাঠ (১ম এবং ২য়  খন্ড দুই... )</h5>
+          <p class="writer-name text-wrap">ডঃ আব্দুল মান্নান শিকদার</p>
+          <p class="price">
+              <span class="other-amount">৳</span>
+              <span class="dollar-icon">১২৪০</span>
+          </p>
+      </div>
+      <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+    </div>
+  </a>
+</div>
+
+
+<div class="col-md-3">
+  <a href="0#" style="text-decoration: none;" class="yourCardId">
+    <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+      <div class="top-image">
+        <img src="./src/pbs/recent/3.jpg" 
+        class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+        <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+          <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+        </span>
+        <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+          <i class="fa fa-heart fa-3x" style="color: red;"></i>
+        </span>
+      </div>
+      
+    
+      <div class="card-body">
+          <h5 class="card-title book-name">খাদ্য অধিদপ্তর নিয়োগ সহকারী: লিখিত ও ভাইভা</h5>
+          <p class="writer-name text-wrap">পাঞ্জেরী সম্পাদনা পর্ষদ</p>
+          <p class="price">
+              <span class="other-amount">৳</span>
+              <span class="dollar-icon">৩০০</span>
+          </p>
+      </div>
+      <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+    </div>
+  </a>
+</div>
+
+
+
+<div class="col-md-3">
+  <a href="0#" style="text-decoration: none;" class="yourCardId">
+    <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+      <div class="top-image">
+        <img src="./src/pbs/recent/4.jpg" 
+        class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+        <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+          <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+        </span>
+        <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+          <i class="fa fa-heart fa-3x" style="color: red;"></i>
+        </span>
+      </div>
+      
+    
+      <div class="card-body">
+          <h5 class="card-title book-name">দারসুন দাখিল সুপার সাজেশন ও মডেল টেস্ট.</h5>
+          <p class="writer-name text-wrap">দারসুন পাবলিকেশন্স (সম্পাদক)</p>
+          <p class="price">
+              <span class="other-amount">৳</span>
+              <span class="dollar-icon">৪০০</span>
+          </p>
+      </div>
+      <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+    </div>
+  </a>
+</div>
+
+</div>
+</div>
+<!--skills-->
+<div class="container mt-5 bg-white" style="border-radius: 5px;">
+  <div class="book-list row pt-5">
+  <div class="col-md-6">
+    <span class="text">ইংলিশ  স্কিল ডেভেলপমেন্ট সংক্রান্ত বই</span>
+  </div>
+  <div class="col-md-6">
+    <p class="text-right" style="color: #1e751e;">সব দেখুন<i class="fa fa-arrow-right"></i></p>
+  </div>
+  </div>
+  <hr>
+  <div class="row" id="multi-cards">
+    <div class="col-md-3">
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/english/1.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>      
+        
+          <div class="card-body">
+              <h5 class="card-title book-name">Bonus</h5>
+              <p class="writer-name text-wrap">মোহাম্মদ টিপু সুলতান</p>
+              <p class="price">
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">১৭৮</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+      
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/english/2.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h6 class="card-title book-name">ছোটদের  spoken English-2</h6>
+              <p class="writer-name text-wrap">উম্মে মাইসুন</p>
+              <p class="price">
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">২৩৮</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+      
+        </div>
+      </a>
+    </div> 
+  
+  <div class="col-md-3">
+    <a href="0#" style="text-decoration: none;" class="yourCardId">
+      <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+        <div class="top-image">
+          <img src="./src/pbs/english/3.jpg" 
+          class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+          <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+            <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+          </span>
+          <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+            <i class="fa fa-heart fa-3x" style="color: red;"></i>
+          </span>
+        </div>
+        
+      
+        <div class="card-body">
+            <h5 class="card-title book-name">ইংলিশে দুর্বলদের জন্য  VOCAB THERAPY</h5>
+            <p class="writer-name text-wrap">সাইফুল ইসলাম</p>
+            <p class="price">
+                <span class="other-amount">৳</span>
+                <span class="dollar-icon">৪৯৯</span>
+            </p>
+        </div>
+        <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+    
+      </div>
+    </a>
+  </div>
+
+  
+  <div class="col-md-3">
+    <a href="0#" style="text-decoration: none;" class="yourCardId">
+      <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+        <div class="top-image">
+          <img src="./src/pbs/english/4.jpg" 
+          class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+          <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+            <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+          </span>
+          <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+            <i class="fa fa-heart fa-3x" style="color: red;"></i>
+          </span>
+        </div>
+        
+      
+        <div class="card-body">
+            <h5 class="card-title book-name">গল্পে গল্পে  ইংরেজি</h5>
+            <p class="writer-name text-wrap">ইমাম হোসেন</p>
+            <p class="price">
+                <span class="other-amount">৳</span>
+                <span class="dollar-icon">২২৫</span>
+            </p>
+        </div>
+        <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+    
+      </div>
+    </a>
+  </div>
+  
+  </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="./src/pbs/MiddleBanner8.png" class="img-fluid" alt="" srcset="">
+      </div>
+      <div class="col-md-4">
+        <img src="./src/pbs/MiddleBanner7.png" class="img-fluid" alt="" srcset="">
+
+      </div>
+      <div class="col-md-4">
+        <img src="./src/pbs/MiddleBanner5.png" class="img-fluid" alt="" srcset="">
+
+      </div>
+    </div>
+  </div>
+  <!--group-->
+<div class="container-fluid mt-3" style="border-radius: 5px;">
+  <div class="button-group gap-3">
+    <button type="submit" class="btn btn-outline-danger m-4" style="color: black;">স্টেশনারি</button>
+    <button type="submit" class="btn btn-outline-danger m-4" style="color: black;">একাডেমিক বই</button>
+    <button type="submit" class="btn btn-outline-danger m-4" style="color: black;">কমিকস</button>
+    <button type="submit" class="btn btn-outline-danger m-4" style="color: black;">বিদেশী বই</button>
+    <button type="submit" class="btn btn-outline-danger m-4" style="color: black;">মুক্তিযুদ্ধের বই</button>
+  </div>
+</div>
+  <!--stationary-->
+<div class="container bg-white pt-5" style="border-radius: 5px;">
+<div class="book-list row">
+  <div class="col-md-6">
+    <span class="text">স্টেশনারি পণ্য</span>
+  </div>
+  <div class="col-md-6">
+    <p class="text-right">সব দেখুন <i class="fa fa-arrow-right"></i></p>
+  </div>
+  </div>
+  <hr>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/stationary/1.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h5 class="card-title book-name fs-6">Deli exceed cutter 2056</h5>
+              <p class="writer-name text-wrap">Deli</p>
+              <p class="price">
+                  <span class="taka-icon">৳</span>
+                  <span class="amount"><del>১৫৫</del></span>
+                  <span class="cross-icon">/</span>
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">১৭০</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+        </div>
+      </a>
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/stationary/2.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h5 class="card-title book-name">Deli Rotary Pencil Sharpener E0642</h5>
+              <p class="writer-name text-wrap">Deli</p>
+              <p class="price">
+                  <span class="taka-icon">৳</span>
+                  <span class="amount"><del>১৭০</del></span>
+                  <span class="cross-icon">/</span>
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">২৪৫</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+        </div>
+      </a>
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/stationary/3.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h5 class="card-title book-name">Deli Glue Stick 15g A20110</h5>
+              <p class="writer-name text-wrap">Deli</p>
+              <p class="price">
+                  <span class="taka-icon">৳</span>
+                  <span class="amount"><del>৫৫</del></span>
+                  <span class="cross-icon">/</span>
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">৫০</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+        </div>
+      </a>
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/stationary/4.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h5 class="card-title book-name">Deli Yocoo - 6209, Flexible Ruler</h5>
+              <p class="writer-name text-wrap">Deli</p>
+              <p class="price">
+                  <span class="taka-icon">৳</span>
+                  <span class="amount"><del>৫০</del></span>
+                  <span class="cross-icon">/</span>
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">৩০</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+        </div>
+      </a>
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/stationary/5.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h5 class="card-title book-name">Delis Glue Stick 8g 7165A</h5>
+              <p class="writer-name text-wrap">Deli</p>
+              <p class="price">
+                  <span class="taka-icon">৳</span>
+                  <span class="amount"><del>৩০</del></span>
+                  <span class="cross-icon">/</span>
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">৫০</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+        </div>
+      </a>
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/stationary/1.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h5 class="card-title book-name">Deli Staple Remover No.0231</h5>
+              <p class="writer-name text-wrap">Deli</p>
+              <p class="price">
+                  <span class="taka-icon">৳</span>
+                  <span class="amount"><del>১৮০</del></span>
+                  <span class="cross-icon">/</span>
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">১৪০</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+        </div>
+      </a>
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/stationary/2.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h5 class="card-title book-name">Deli Correction Pen 39299</h5>
+              <p class="writer-name text-wrap">Deli</p>
+              <p class="price">
+                  <span class="taka-icon">৳</span>
+                  <span class="amount"><del>৪০</del></span>
+                  <span class="cross-icon">/</span>
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">৪০</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+        </div>
+      </a>
+      <a href="0#" style="text-decoration: none;" class="yourCardId">
+        <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+          <div class="top-image">
+            <img src="./src/pbs/stationary/4.jpg" 
+            class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+            <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+              <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+            </span>
+            <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+              <i class="fa fa-heart fa-3x" style="color: red;"></i>
+            </span>
+          </div>
+          
+        
+          <div class="card-body">
+              <h5 class="card-title book-name">Deli 0306 Stapler</h5>
+              <p class="writer-name text-wrap">Deli</p>
+              <p class="price">
+                  <span class="taka-icon">৳</span>
+                  <span class="amount"><del>১৮০</del></span>
+                  <span class="cross-icon">/</span>
+                  <span class="other-amount">৳</span>
+                  <span class="dollar-icon">১৮০</span>
+              </p>
+          </div>
+          <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+  
+        </div>
+      </a>
+    </div>
+    <!-- Add Custom Pagination -->
+    <div class="custom-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+ </div>
+</div>
+  <!--group-->
+  <div class="container-fluid mt-3" style="border-radius: 5px;">
+    <div class="button-group gap-3">
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">সমকালীন উপন্যাস</button>
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">রুপি সমান টাকা অফার</button>
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">শিশু-কিশোর</button>
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">অনুবাদ</button>
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">বঙ্গবন্ধু ও মুক্তিযুদ্ধ</button>
+    </div>
+  </div>
+    <!--politices-->
+    <div class="container bg-white pt-5" style="border-radius: 5px;">
+      <div class="book-list row">
+        <div class="col-md-6">
+          <span class="text">রাজনীতি ও দর্শন</span>
+        </div>
+        <div class="col-md-6">
+          <p class="text-right">সব দেখুন <i class="fa fa-arrow-right"></i></p>
+        </div>
+        </div>
+        <hr>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/politices/1.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name fs-6">বৃহত্তর প্রেক্ষাপটে বাংলাদেশ  ভারত</h5>
+                    <p class="writer-name text-wrap">আশিফুল ইসলাম জিন্নাহ</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৫৫০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">৪৬৮</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/politices/2.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">বৃষ্টি ও বিদ্রোহীগণ</h5>
+                    <p class="writer-name text-wrap">সৈয়দ শামসুল হক</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৪৫০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">৩৮৩</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/politices/3.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">A Promised Land</h5>
+                    <p class="writer-name text-wrap">বারাক ওবামা</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৪০০০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">৩৬০০</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/politices/4.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">বিএনপি সময়-অসময়</h5>
+                    <p class="writer-name text-wrap">মহিউদ্দিন আহমেদ</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৬০০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">৫১০</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/politices/5.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">Bangladesh Reform Agenda for Local...</h5>
+                    <p class="writer-name text-wrap">তোফায়েল  আহমেদ</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>২৮০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">২৩৮</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/politices/6.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">জিন্না:: ভারত দেশভাগ স্বাধীনতা</h5>
+                    <p class="writer-name text-wrap">যশোবস্ত সিংহ</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>১৫০০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">১৩৫০</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/politices/7.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">নগরায়ণ ও নগর সরকার </h5>
+                    <p class="writer-name text-wrap">তোফায়েল  আহমেদ</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>১৭০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">১৫০</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/politices/8.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">উড়াল বালক</h5>
+                    <p class="writer-name text-wrap">মোহিত কামাল</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৩০০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">২৫৫</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+          </div>
+          <!-- Add Custom Pagination -->
+          <div class="custom-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+       </div>
+      </div>
+      <!--group-->
+  <div class="container-fluid mt-3" style="border-radius: 5px;">
+    <div class="button-group gap-3">
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">বিদেশী বই</button>
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">একাডেমিক বই</button>
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">আত্মউন্নয়নমূলক বই (বাংলা)</button>
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">ভ্রমণ ও প্রবাস</button>
+      <button type="submit" class="btn btn-outline-danger m-3" style="color: black;">জীবনী</button>
+    </div>
+  </div>
+    <!--novel-->
+    <div class="container bg-white pt-5 mb-4" style="border-radius: 5px;">
+      <div class="book-list row">
+        <div class="col-md-6">
+          <span class="text">উপন্যাস</span>
+        </div>
+        <div class="col-md-6">
+          <p class="text-right">সব দেখুন <i class="fa fa-arrow-right"></i></p>
+        </div>
+        </div>
+        <hr>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/nobel/1.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name fs-6">পার্থিব</h5>
+                    <p class="writer-name text-wrap">শিষেন্দু মুখোপাধ্যায়</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>১৯৮০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">১৮০০</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/nobel/2.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">Revolution Twenty 20</h5>
+                    <p class="writer-name text-wrap">চেতন ভগত</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৫০০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">৪৫০</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/nobel/3.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">পিদিমের আলো</h5>
+                    <p class="writer-name text-wrap">, শীর্ষেন্দু মুখোপাধ্যায়</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৩০০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">২৭০</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/nobel/4.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">The Forty Rules of Love</h5>
+                    <p class="writer-name text-wrap">এলিফ শাফাক</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>১৩০০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">৯০০</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/nobel/5.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">আগুনের মানব</h5>
+                    <p class="writer-name text-wrap">কাশেম বিন আবুবক্কর</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৮০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">৭২</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/nobel/6.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">বালুকা বেলা</h5>
+                    <p class="writer-name text-wrap">আইয়ুব আহমেদ দুলাল</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>২০০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">১৭৬</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/nobel/7.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">নকী খোঁজ তুমি ঘাসের বনে </h5>
+                    <p class="writer-name text-wrap">রাজু সিদ্দিক</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>১৬৭</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">১২৫</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+            <a href="0#" style="text-decoration: none;" class="yourCardId">
+              <div class="card recent border-0" style="width: 250px; margin: 0px; padding: 0px;" >
+                <div class="top-image">
+                  <img src="./src/pbs/nobel/8.jpg" 
+                  class="card-img-top img-fluid border mt-4 mx-4" alt="Book Image"  style="width: 200px; height: 200px;">
+                  <span class="discount" style="position: absolute; top: 25px; right: 10px;">
+                    <i class="fa fa-circle fa-3x" aria-hidden="true" data-text="20% ছাড়"></i>
+                  </span>
+                  <span class="love-icon" style="position: absolute; top: 25px; right: 30px;">
+                    <i class="fa fa-heart fa-3x" style="color: red;"></i>
+                  </span>
+                </div>
+                
+              
+                <div class="card-body">
+                    <h5 class="card-title book-name">জুলেখাদের কথা</h5>
+                    <p class="writer-name text-wrap">ফাহমিদা হক</p>
+                    <p class="price">
+                        <span class="taka-icon">৳</span>
+                        <span class="amount"><del>৮০</del></span>
+                        <span class="cross-icon">/</span>
+                        <span class="other-amount">৳</span>
+                        <span class="dollar-icon">৭২</span>
+                    </p>
+                </div>
+                <button class="btn btn-danger add-to-cart-button border-0">Add to Cart</button>
+        
+              </div>
+            </a>
+          </div>
+          <!-- Add Custom Pagination -->
+          <div class="custom-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+       </div>
+      </div>
+<div class="container bg-white pt-5" style="border-radius: 5px;">
+  <div class="book-list row">
+    <div class="col-md-6">
+      <span class="text">ফিচার্ড লেখকগণ</span>
+    </div>
+    <div class="col-md-6">
+      <p class="text-right">সব দেখুন <i class="fa fa-arrow-right"></i></p>
+    </div>
+    </div>
+    <hr>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <a href="0#" style="text-decoration: none;">
+          <div class="recent border-0" style="width: 200px; margin: 0px; padding: 0px;" >
+            <div class="top-image">
+              <img src="./src/pbs/writer/1.jpg" 
+              class="card-img-top img-fluid" alt="Book Image"  style="width: 200px; height: 200px;">
+            </div>  
+            <div class="card-body">
+                <p class="writer-name text-wrap">হুমায়ূন আহমেদ</p>
+            </div>
+    
+          </div>
+        </a>
+        <a href="0#" style="text-decoration: none;">
+          <div class="recent border-0" style="width: 200px; margin: 0px; padding: 0px;" >
+            <div class="top-image">
+              <img src="./src/pbs/writer/2.jpg" 
+              class="card-img-top img-fluid" alt="Book Image"  style="width: 200px; height: 200px;">
+            </div>  
+            <div class="card-body">
+                <p class="writer-name text-wrap">মুনজেরিন শহীদ</p>
+            </div>
+    
+          </div>
+        </a>
+        <a href="0#" style="text-decoration: none;">
+          <div class="recent border-0" style="width: 200px; margin: 0px; padding: 0px;" >
+            <div class="top-image">
+              <img src="./src/pbs/3.png" 
+              class="card-img-top img-fluid" alt="Book Image"  style="width: 200px; height: 200px;">
+            </div>  
+            <div class="card-body">
+                <p class="writer-name text-wrap">মুনজেরিন শহীদ</p>
+            </div>
+    
+          </div>
+        </a>
+        <a href="0#" style="text-decoration: none;">
+          <div class="recent border-0" style="width: 200px; margin: 0px; padding: 0px;" >
+            <div class="top-image">
+              <img src="./src/pbs/writer/4.jpg" 
+              class="card-img-top img-fluid" alt="Book Image"  style="width: 200px; height: 200px;">
+            </div>  
+            <div class="card-body">
+                <p class="writer-name text-wrap">মুনজেরিন শহীদ</p>
+            </div>
+    
+          </div>
+        </a>
+        <a href="0#" style="text-decoration: none;">
+          <div class="recent border-0" style="width: 200px; margin: 0px; padding: 0px;" >
+            <div class="top-image">
+              <img src="./src/pbs/writer/5.jpg" 
+              class="card-img-top img-fluid" alt="Book Image"  style="width: 200px; height: 200px;">
+            </div>  
+            <div class="card-body">
+                <p class="writer-name text-wrap">মুনজেরিন শহীদ</p>
+            </div>
+    
+          </div>
+        </a>
+        <a href="0#" style="text-decoration: none;">
+          <div class="recent border-0" style="width: 200px; margin: 0px; padding: 0px;" >
+            <div class="top-image">
+              <img src="./src/pbs/writer/6.jpg" 
+              class="card-img-top img-fluid" alt="Book Image"  style="width: 200px; height: 200px;">
+            </div>  
+            <div class="card-body">
+                <p class="writer-name text-wrap">মুনজেরিন শহীদ</p>
+            </div>
+    
+          </div>
+        </a>
+      </div>
+      <!-- Add Custom Pagination -->
+      <div class="custom-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+   </div>
+  </div>
+
+
+<div class="container bg-white  mt-3" style="border-radius: 5px;">
+  <h4 class="text-center mt-5 pt-3">নতুন নতুন অফার সম্পর্কে সবার আগে জানতে সাবস্ক্রাইব করুন</h4>
+  <form class="form-inline justify-content-center mt-3 mb-4 ">
+      <div class="form-group mx-sm-3 mb-2">
+          <label for="inlineInput" class="sr-only">Enter your email address</label>
+          <input type="text" class="form-control" id="inlineInput" placeholder="Enter your email address">
+      </div>
+      <button type="submit" class="btn btn-outline-secondary mb-2">Subscribe</button>
+  </form>
+</div>
+<div class="contaner-fluid  bg-white p-3" style="border-radius: 5px;">
+  <img src="./src/pbs/d&p/delivery.png" class="img-fluid" alt="">
+</div>
+
+  <!--footer Section-->
+  <footer>
+    <div class="container-fluid p-3">
+
+      <div class="row">
+        <div class="col-lg-3 ml-auto">
+          <div class="footer-contact-item d-flex align-items-center mb-4">
+            <span class="footer-flaticon-phone-call">
+                <i class="fas fa-phone"></i> 
+            </span>
+            <address class="text fs-6">
+                +88 01313-770770                      
+            </address>
+        </div>
+          <div class="footer-contact-item d-flex align-items-center mb-4">
+              <span class="footer-flaticon-house"><i class="fas fa-location-arrow"></i></span>
+              <address class="text">
+                43 Shilpacharya Zainul Abedin Sarak (Old 16 Shantinagar), Dhaka - 1217
+              </address>
+          </div>
+
+          <div class="footer-contact-item d-flex align-items-center mb-4">
+              <span class="footer-flaticon-mail">
+                  <i class="fas fa-envelope"></i> 
+              </span>
+              <address class="text">
+                support@pbs.com.bd
+              </address>
+          </div>
+      </div>
+
+        <div class="col-md-3 border-end">
+          <div class="footer-column">
+            <h2 class="footer-heading text-center">PAGE</h2>
+            <ul class="footer-icon-list">
+                <li><a href="#" style="text-align: left;">Home</a></li>
+                <li><a href="#" style="text-align: left;">Pre Order</a></li>
+                <li><a href="#" style="text-align: left;">Author</a></li>
+                <li><a href="#" style="text-align: left;">Publisher</a></li>
+                <li><a href="#" style="text-align: left;">Book Request</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 border-end">
+          <div class="footer-column">
+            <h2 class="footer-heading text-center">HELP</h2>
+            <ul class="footer-icon-list">
+                <li><a href="#" style="text-align: left;">Terms [&] Condition</a></li>
+                <li><a href="#" style="text-align: left;">Privacy Policy</a></li>
+                <li><a href="#" style="text-align: left;">Refund [&] Return Policy</a></li>
+                <li><a href="#" style="text-align: left;">About Us</a></li>
+                <li><a href="#" style="text-align: left;">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        
+        <div class="col-md-3 border-end">
+          <div class="footer-column">
+              <h2 class="footer-heading">Like us on Facebook</h2>
+              <a href="0#">PBS (Books+Music+Cafe)</a>
+          </div>
+      </div>
+   
+      </div>
+    </div>
+    <div class="social" style="display: flex; align-items: center; justify-content: center; padding: 10px;">
+      <span class="text">Stay Connected :</span>
+      <div class="pull-right">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f fa-2x bg-dark p-2 m-0"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram fa-2x bg-dark p-2 m-0"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube fa-2x bg-dark p-2 m-0"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin fa-2x bg-dark p-2 m-0"></i></a>
+
+      </div>
+    </div>
+    <div class="footer-img  bg-white p-3" style="display: flex; align-items: center; border-radius: 5px;" >
+      <h5 class="text">Via Payment</h5>
+     <img src="./src/pbs/ssl_payment_icon_desktop.png" class="img-fluid" alt="">
+    </div>
+    <div class="footer-copy p-3" >
+        <p class=" text-center" >&copy; 2023 pbs.com.bd All rights Reserved.</p>
+      </div>
+   </footer>
+ </div>
+<!---->
+      
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+    </div>
+  </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <div class="circle">
+          <i class="fas fa-arrow-up"></i>
+      </div>
+  </button>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+      $(document).ready(function () {
+          // Show love-icon and add-to-cart-button on mouseover
+          $('.yourCardId').hover(
+              function () {
+                  $(this).find('.love-icon').show();
+                  $(this).find('.add-to-cart-button').show();
+              },
+              function () {
+                  $(this).find('.love-icon').hide();
+                  $(this).find('.add-to-cart-button').hide();
+              }
+          );
+      });
+  </script>
+
+<script>
+      var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+</script>
+  <script>
+    $(document).ready(function(){
+      // Enable Bootstrap tooltips
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <script>
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+    <script>
+        // Your custom JavaScript goes here
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

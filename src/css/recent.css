@@ -1,0 +1,100 @@
+.card.recent{
+    margin: 0px;
+    padding: 0px;
+
+}
+/* Add hover effect for the card to show border shadow on mouseover */
+.card.recent:hover {
+    transform: translateY(5px);
+    box-shadow: inset 0px 10px 20px 2px rgba(227, 240, 240, 0.7);
+}
+
+/* Hide love-icon by default */
+.love-icon {
+    display: none;
+}
+
+/* Add additional styles as needed */
+
+.top-image {
+    position: relative;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  .top-image img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+  
+  .discount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff; /* Assuming you want white text on the discount */
+    background-color: #000; /* Assuming you want a black background for the discount */
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .discount i {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    color: red; /* Assuming you want white color for the icon */
+  }
+  
+  .love-icon {
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -53%);
+    color: red; /* Assuming you want white color for the icon */
+  }
+  
+  /* Add this if you want to remove default list styling for the discount */
+  .discount {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* swiper CSS*/
+  .swiper-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.swiper-slide {
+    width: 200px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    background-color: #eee; /* Background color for visualization */
+    margin-right: 10px; /* Adjust the margin between slides */
+}
+
+/* Custom Dots CSS */
+.swiper-pagination-custom {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ff0000; /* Customize dot color */
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  background-color: #ff0000; /* Customize active dot color */
+}
